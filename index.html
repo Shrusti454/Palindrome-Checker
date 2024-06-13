@@ -24,9 +24,16 @@
         let str=document.getElementById("str");
          let msg=document.getElementById("msg");
 
+          if(name.value=="")
+          {
+           alert("string cannot be empty");
+            msg.innerHTML="";
+            str.focus();
+            return;
+          }
         if(str.value.trim()=="")
         {
-            alert("string cannot be empty");
+            alert("string cannot be blank spaces");
             msg.innerHTML="";
             str.focus();
             return;
