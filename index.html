@@ -19,11 +19,16 @@
 </form>
 <script>
      function check()
-      str = str.replace(/[^a-z0-9]/g, '');
+      
      {
         event.preventDefault();
         let str=document.getElementById("str");
          let msg=document.getElementById("msg");
+
+          str = str.toLowerCase();
+    
+    // Remove non-alphanumeric characters (if needed)
+    str = str.replace(/[^a-z0-9]/g, '');
 
          
         if(str.value.trim()=="")
