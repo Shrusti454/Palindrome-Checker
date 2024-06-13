@@ -34,7 +34,7 @@
             return;
          }
    
-     let s= str.value.toLowerCase();
+     let s = str.value.replace(/\s+/g, '').toLowerCase();
      let rs=s.split("").reverse().join("");
 
     if(s==rs)
