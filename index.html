@@ -24,13 +24,7 @@
         let str=document.getElementById("str");
          let msg=document.getElementById("msg");
 
-          if(name.value=="")
-          {
-           alert("string cannot be empty");
-            msg.innerHTML="";
-            str.focus();
-            return;
-          }
+         
         if(str.value.trim()=="")
         {
             alert("string cannot be blank spaces");
@@ -38,15 +32,7 @@
             str.focus();
             return;
          }
-   if(!str.value.match(/^[A-Za-z ]+$/]))
-   {
-     alert("string should contain only letters");
-        msg.innerHTML"";
-        str.value="";
-        str.focus();
-        return;
-   }
-
+   
      let s= str.value;
      let rs=s.split("").reverse().join("");
 
