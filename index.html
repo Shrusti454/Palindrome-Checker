@@ -31,6 +31,14 @@
             str.focus();
             return;
          }
+   if(!str.value.match(/^[A-Za-z ]+$/]))
+   {
+     alert("string should contain only letters");
+        msg.innerHTML"";
+        str.value="";
+        str.focus();
+        return;
+   }
 
      let s= str.value;
      let rs=s.split("").reverse().join("");
