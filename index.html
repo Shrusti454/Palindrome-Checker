@@ -25,11 +25,6 @@
         let str=document.getElementById("str");
          let msg=document.getElementById("msg");
 
-          str = str.toLowerCase();
-    
-    // Remove non-alphanumeric characters (if needed)
-    str = str.replace(/[^a-z0-9]/g, '');
-
          
         if(str.value.trim()=="")
         {
@@ -39,7 +34,7 @@
             return;
          }
    
-     let s= str.value;
+     let s= str.value.toLowerCase();
      let rs=s.split("").reverse().join("");
 
     if(s==rs)
